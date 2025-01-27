@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{content.title}">Thymeleaf課題</title>
+</head>
+<body>
+    <h1 th:text="#{content.title}">Thymeleaf課題</h1>
+    <h2 th:text="#{content.output.header}">出力画面</h2>
+    <p th:text="${formattedMessage}">入力された値は「未入力」です。</p>
+    <a th:href="${returnLink}" th:text="#{content.return}">入力画面へ戻る</a>
+</body>
+</html>
